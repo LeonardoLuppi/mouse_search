@@ -37,6 +37,7 @@ print("Original document:", example_doc)
 print("Processed document:", tokenize_and_stem(example_doc))
 print("TF-IDF vector for all documents:", vectorizer.vocabulary_)
 
+# sample query
 query = "contact email to chat martin"
 query_vector = vectorizer.transform([query]).todense() # convert query to TF-IDF vector
 print(query_vector)
